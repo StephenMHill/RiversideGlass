@@ -7,39 +7,41 @@
 
 :root {
     --main-bg-color: rgba(109,107,113, 0.70);
-  }
-
-/* Fonts */
-
-
-
+}
 
 /************** CSS Reset **************/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 * {
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
     list-style-type: none;
     text-decoration: none;
     font-style: normal;
     color: inherit;
 }
 
-
-/************** Links **************/
-
-nav a:hover {
-    color: white;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /************** Body Style **************/
 
-html {
-    overflow: hidden;
-}
-
 html, body {
+    font-family: sans-serif;
     height: 100%;
+} html {
+     box-sizing: border-box;
+}
+ *, *:before, *:after {
+     box-sizing: inherit;
 }
 
 body {
@@ -55,7 +57,6 @@ body {
 /************** Headers **************/
 
 header {
-    margin: 1% 0 0 1%;
     position: fixed;
     display: flex;
     width: 100%;
@@ -66,22 +67,134 @@ header img {
     width: 100%;
 }
 
-nav {
-    width: 50%;
-    margin: 1% 0 0 5%;
+.sidebar {
+    position: fixed;
+    z-index: 50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70px;
+    background: #000000;
 }
-
-nav ul {
-    display: inline-block;
-    font-size: 1.75em;
-    text-align: center;
-    margin: auto;
+.sidebar-trigger {
+    padding: .75rem;
     width: 100%;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 0;
 }
-
-nav ul li {
-    padding: 2px;
-    display: inline-block;
+.sidebar-trigger:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+.sidebar-trigger:hover div span {
+    background: #000000;
+}
+.sidebar-trigger div {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.sidebar-trigger div span {
+    display: block;
+    background: #ffffff;
+    transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 0;
+}
+.sidebar-trigger .first span, .sidebar-trigger .third span {
+    width: 100%;
+    height: 100%;
+}
+.sidebar-trigger .second span:first-of-type {
+    width: 50%;
+    margin-right: 20%;
+}
+.sidebar-trigger .second span:last-of-type {
+    width: 30%;
+}
+.sidebar-trigger .fourth span:first-of-type {
+    width: 30%;
+    margin-right: 20%;
+}
+.sidebar-trigger .fourth span:last-of-type {
+    width: 50%;
+}
+.sidebar-nav {
+    position: absolute;
+    left: -175px;
+    z-index: 40;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 5rem;
+    transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 0;
+}
+@media only screen and (max-width: 768px) {
+    .sidebar-nav {
+        height: 100%;
+        top: 0 !important;
+        left: -153px;
+   }
+}
+.sidebar-nav.is--active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.sidebar-nav li a {
+    display: block;
+    padding: .5rem 3rem .5rem .75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #000000;
+    transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 0;
+}
+.sidebar-nav li a:hover {
+    background: #000000;
+    color: #ffffff;
+}
+.sidebar-nav .dropdown {
+    position: relative;
+}
+.sidebar-nav .dropdown ul {
+    position: absolute;
+    z-index: 40;
+    top: 0;
+    left: -274px;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+@media only screen and (max-width: 768px) {
+    .sidebar-nav .dropdown ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: none;
+   }
+}
+.sidebar-nav .dropdown:hover ul {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -129,46 +242,3 @@ footer {
     margin: 20px;  
     box-sizing: border-box;
   }
-
-/* #contact-container article {
-    display: flex;
-}
-
- #contact-container article address {
-    font-size: 1.5em;
-    width: 100%;
-    margin: auto;
-}
-
-
-#contact-container article form {
-    width: 100%;
-    padding: 5px;
-    margin: auto;
-}
-
-input, textarea, label, button {
-    margin: 5px;
-    padding: 1px;
-}
-
-textarea {
-    width: 85%;
-    height: 100px;
-}
-
-table {
-    width: 100%;
-}
-
-table input {
-    width: 75%;
-}
-
-table tr td:first-child:not(:last-child){
-    text-align: right;
-}
-
-table:last-child {
-    text-align: center;
-}  */
