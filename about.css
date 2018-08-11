@@ -1,0 +1,13 @@
+/************** About **************/
+
+#about-container *{
+    margin: 1% auto;
+}
+
+#about-container h1{
+    font-size: 2em;
+}
+
+#about-container h2 {
+    font-size: 1.5em;
+}

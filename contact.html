@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Author: Jonathon Bauer-->
+<html>
+    <head>
+        <title>Riverside Glass | Contact</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="contact.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+                <a href="index.html"><img src="images/logo.png" alt="Riverside Glass Logo"></a>
+                <nav>
+                    <ul>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="projects.html"<li>Projects</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+        </header>
+
+        <main class="static">
+            <section id="contact-container">
+                <article>
+                    <address>
+                        <h1>Riverside Glass</h1>
+                        2040 Fasan Drive
+                        <br/>  
+                        Oldcastle,  ON    N0R 1L0
+                        <br/>
+                        Tel: <a href="tel:+19999999999">123-456-7890</a>
+                        <br/>
+                        Email: <a href="mailto:webmaster@example.com">webmaster@example.com</a>
+                    </address>
+                    <form>
+                        <table>
+                        <tr>
+                        <td><label for="name" id="name">Name </label></td>
+                        <td><input type="text" name="name" id="name"/></td>
+                        </tr>
+                        <tr>
+                        <td><label for="phoneNum" id="phoneNum">Phone</label></td>
+                        <td><input type="tel" name="phoneNum" id="phoneNum"/></td>
+                        </tr>
+                        <tr>
+                        <td><label for="email" id="email">Email</label></td>
+                        <td><input type="email" name="email" id="email"/></td>
+                        </tr>
+                        <tr>
+                        <td colspan="2"><textarea name="message" id="message"></textarea></td>
+                        </tr>
+                        <tr>
+                        <td colspan="2"><button type="submit" value="Submit" id="submit" name="submit">Submit</button></td>
+                        </tr>
+                        </table>
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            &copy; jonnybauer 2018
+        </footer>
+    </body>
+</html>

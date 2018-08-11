@@ -1,0 +1,44 @@
+/************** Contact Page **************/
+
+#contact-container article {
+    display: flex;
+}
+
+ #contact-container article address {
+    font-size: 1.5em;
+    width: 100%;
+    margin: auto;
+}
+
+
+#contact-container article form {
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+input, textarea, label, button {
+    margin: 5px;
+    padding: 1px;
+}
+
+textarea {
+    width: 85%;
+    height: 100px;
+}
+
+table {
+    width: 100%;
+}
+
+table input {
+    width: 75%;
+}
+
+table tr td:first-child:not(:last-child){
+    text-align: right;
+}
+
+table:last-child {
+    text-align: center;
+} 
