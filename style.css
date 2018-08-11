@@ -138,7 +138,6 @@ header img {
     visibility: hidden;
     pointer-events: none;
     background: rgba(255, 255, 255, 0.9);
-    padding-top: 5rem;
     transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition-delay: 0;
 }
