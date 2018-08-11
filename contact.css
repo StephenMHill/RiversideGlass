@@ -1,5 +1,15 @@
 /************** Contact Page **************/
 
+body {
+    background-image: url("images/backgrounds/background1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    transition: 2s;
+    overflow: auto;
+}
+
 #contact-container article {
     display: flex;
 }
