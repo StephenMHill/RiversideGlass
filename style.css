@@ -130,6 +130,20 @@ header img {
 .sidebar-trigger .fourth span:last-of-type {
     width: 50%;
 }
+
+.sidebar-trigger.is--active .first span {
+    transform: rotate(-45deg) translate(-12px, 10px)
+}
+
+.sidebar-trigger.is--active .second span,
+.sidebar-trigger.is--active .fourth span {
+    opacity: 0;
+}
+
+.sidebar-trigger.is--active .third span {
+    transform: rotate(45deg);
+}
+
 .sidebar-nav {
     position: absolute;
     left: -175px;
@@ -194,7 +208,6 @@ header img {
     pointer-events: all;
     background: rgba(255, 255, 255, 0.9);
 }
-
 
 /************** Content **************/
 
