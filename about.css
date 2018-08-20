@@ -18,8 +18,9 @@
 
 #logo
 {
-    padding-top: 1%;
-    width: 50%;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 30%;
 }
 
 
@@ -28,9 +29,8 @@ body
     letter-spacing: 0.7px;
     font-family: 'Sawarabi Mincho', sans-serif;
     background-size: cover;
-    background: #f2f3fc;
+    background: #d0d2dd;
     width: 100%;
-    padding: 0.2%;
 }
 
 h1

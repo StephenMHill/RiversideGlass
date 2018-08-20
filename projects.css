@@ -7,12 +7,12 @@
 #projects-page section {
     margin-top: 1%;
     margin-left: 5%;
-    width: 90%;
+    width: 45%;
 }
 
 .big:hover
 {
-    border: 3px solid white;
+    border: 1px solid white;
     box-sizing: border-box;
     border-radius: 25px;
     transition: .3s;
@@ -47,6 +47,17 @@
 
 #logo
 {
-    padding-top: 1%;
-    width: 50%;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 30%;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+body
+{
+    background-image: url(images/backgrounds/CW2.png);
+    background-repeat: repeat;
+    background-size: cover;
 }

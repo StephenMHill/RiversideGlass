@@ -218,13 +218,19 @@ html, body {
     position: relative;
 }
 .hero-slider__slide1 {
-    background-image: url("images/backgrounds/background1.jpg");
+    background-image: url("images/backgrounds/SRIF-day.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .hero-slider__slide2 {
-    background-image: url("images/backgrounds/background2.jpg");
+    background-image: url("images/backgrounds/strat3.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero-slider__slide3 {
+    background-image: url("images/backgrounds/Owen%20Sound.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
