@@ -5,24 +5,30 @@
 }
 
 #projects-page section {
-    margin-top: 10%;
-    width: 100%;
-    
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.big:hover
+{
+    border: 3px solid white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    transition: .3s;
+    transform: scale(1.1);
+    transform-origin: center;
 }
 
 .projects-container div {
-    padding: 0.5%;
+    padding: 0.2%;
     border-radius: 5px;
-
 }
 
-.project {
-    background-color: var(--main-bg-color);
-    margin: 1% auto;
-}
 
 .project img {
     width: 100%;
+    border-radius: 2px;
 }
 
 #multi-project {
@@ -33,4 +39,14 @@
 
 #multi-project .project {
     width: 40%;
+}
+
+.sidebar-trigger div span {
+    background: #000000;
+}
+
+#logo
+{
+    padding-top: 1%;
+    width: 50%;
 }

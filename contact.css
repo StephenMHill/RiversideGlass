@@ -20,6 +20,11 @@ body {
     margin: auto;
 }
 
+#logo
+{
+    padding-top: 1%;
+    width: 50%;
+}
 
 #contact-container article form {
     width: 100%;
@@ -52,3 +57,8 @@ table tr td:first-child:not(:last-child){
 table:last-child {
     text-align: center;
 } 
+
+address
+{
+    
+}

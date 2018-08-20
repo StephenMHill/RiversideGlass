@@ -11,3 +11,48 @@
 #about-container h2 {
     font-size: 1.5em;
 }
+
+.sidebar-trigger div span {
+    background: #000000;
+}
+
+#logo
+{
+    padding-top: 1%;
+    width: 50%;
+}
+
+
+body
+{
+    letter-spacing: 0.7px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    background-size: cover;
+    background: #f2f3fc;
+    width: 100%;
+    padding: 0.2%;
+}
+
+h1
+{
+    color: royalblue;
+}
+
+#banner
+{
+    height: 400px;
+    width: 100%;
+}
+
+p
+{
+    
+    color: #000000;
+    font-size: 1.3em;
+    
+}
+
+/*
+  text-shadow: 0px 1px #000000, -1px 0px #000000, 1px 0px #000000, 0px -1px #000000;
+text-shadow: 0px 0.5px #000000, -0.5px 0px #000000, 0.5px 0px #000000, 0px -0.5px #000000;
+*/
