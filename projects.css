@@ -57,7 +57,7 @@
 
 body
 {
-    background-image: url(images/backgrounds/CW2.png);
+    background: #d0d2dd;
     background-repeat: repeat;
     background-size: cover;
 }
