@@ -103,16 +103,17 @@ table {
 section {
     display: flex;
     justify-content: space-around;
+    clear: both;
 }
 
 article {
-    width: 22%;
-    display: flex;
-    flex-direction: column;
+    width: 33%;
+    box-sizing: border-box;
 }
 
 h1
 {
+    font-weight: 500;
     width: 30%;
     margin: 5% 35% 5% 35%;
     font-family: isocpeur, cursive;
@@ -127,14 +128,15 @@ h1
 
 figure
 {
-    width: 50%;
-    margin: 30% 25% 5% 25%;
+    margin: 20% 25% 5% 25%;
 }
 
 #addy
 {
     transition: 500ms;
     background: white;
+    width: 70%;
+    margin: 1% 15% 1% 15%;
 }
 
 .address
@@ -149,38 +151,83 @@ figure
     font-size: 22px;
     margin: 5% 15% 5% 15%;
 }
+/*address above-------------------------------------------------*/
 
-.ezra
+#cally
+{
+    transition: 500ms;
+    background: white;
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+}
+
+.phone
 {
     font-family: isocpeur, cursive;
     font-size: 42px;
     color: royalblue;
 }
 
-#finn 
+#call 
 {
-    font-size: 19px;
-    letter-spacing: 1.5px;
-    line-height: 20px;
+    font-size: 22px;
+    margin: 5% 15% 5% 15%;
 }
 
-.violet
+#cally:hover
 {
-    font-family: 'Indie Flower', cursive;
+    background: rgb(99, 181, 235);
+}
+
+/*phone above--------------------------------------------------*/
+
+#maily
+{
+    transition: 500ms;
+    background: white;
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+}
+
+.email
+{
+    font-family: isocpeur, cursive;
     font-size: 42px;
-    color: #9b0154;
+    color: royalblue;
 }
 
-#may 
+#mail 
 {
-    font-size: 19px;
-    letter-spacing: 1.5px;
-    line-height: 22px;
+    font-size: 22px;
+    margin: 5% 15% 5% 15%;
 }
+
+#maily:hover
+{
+    background: rgb(99, 181, 235);
+}
+
+/*email above--------------------------------------------------*/
 
 #logo
 {
     margin-top: 1%;
     margin-left: 1%;
     width: 30%;
+}
+
+7. @media
+
+-------------------------------------------------*/
+@media screen and (max-width: 780px)
+{
+
+   section
+    {
+        flex-direction: column;
+    }
+    
+    article {
+        width: 100%;
+    }
 }
