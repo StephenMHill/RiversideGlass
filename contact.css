@@ -1,28 +1,181 @@
-/************** Contact Page **************/
-@font-face {
-  font-family: "isocpeur";
-  src: url("fonts/isocpeur.ttf") format("ttf");
+/* 
+Author: Stephen Hill
+
+Color Guide
+**************
+#9b0154 - Dark Pink
+#277b18 - Green
+
+Typography Guide
+*******************
+font-family's : Share Tech, Chicle, Indie Flower, Pacifico, cursive, sans-serif
+
+html - 'Share Tech' 62px
+html - 'Chicle' 42px, 22px
+html - 'Pacifico', 'Indie Flower',  42px, 19px
+
+**************************************************
+0. CSS Reset
+1. Universal Styles (typography, etc.)
+2. Header & Nav Styles
+3. Main Body Content
+4. Sidebar Content
+5. Footer
+6. Comments and Forms
+**************************************************
+
+/*------------------------------------------------
+
+0. CSS Reset
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+
+-------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-    background-image: url("images/backgrounds/background1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-position: center;
-    transition: 2s;
-    overflow: auto;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-#contact-container article {
+/*------------------------------------------------
+
+1. Universal Styles
+
+-------------------------------------------------*/
+
+:root
+{
+    background-color: rgb(51,51,51);
+}
+
+/*------------------------------------------------
+
+2. Header and Nav Styles
+
+-------------------------------------------------*/
+
+/*------------------------------------------------
+
+3. Main Body Content
+
+-------------------------------------------------*/
+
+section {
     display: flex;
+    justify-content: space-around;
 }
 
- #contact-container article address {
-    font-size: 1.5em;
-    width: 100%;
-    margin: auto;
+article {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    width: 30%;
+    margin: 5% 35% 5% 35%;
+    font-family: isocpeur, cursive;
+    font-size: 42px;
+    color: royalblue;
+}
+
+#addy:hover
+{
+    background: rgb(99, 181, 235);
+}
+
+figure
+{
+    width: 50%;
+    margin: 30% 25% 5% 25%;
+}
+
+#addy
+{
+    transition: 500ms;
+    background: white;
+}
+
+.address
+{
+    font-family: isocpeur, cursive;
+    font-size: 42px;
+    color: royalblue;
+}
+
+#rsg 
+{
+    font-size: 22px;
+    margin: 5% 15% 5% 15%;
+}
+
+.ezra
+{
+    font-family: isocpeur, cursive;
+    font-size: 42px;
+    color: royalblue;
+}
+
+#finn 
+{
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+
+.violet
+{
+    font-family: 'Indie Flower', cursive;
+    font-size: 42px;
+    color: #9b0154;
+}
+
+#may 
+{
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
 }
 
 #logo
@@ -30,51 +183,4 @@ body {
     margin-top: 1%;
     margin-left: 1%;
     width: 30%;
-}
-
-
-#contact-container article form {
-    width: 100%;
-    padding: 5px;
-    margin: auto;
-}
-
-input, textarea, label, button {
-    margin: 5px;
-    padding: 1px;
-}
-
-textarea {
-    width: 85%;
-    height: 100px;
-}
-
-table 
-{
-    width: 100%;
-    background: rgb(255, 255, 255, 0.4);
-}
-
-table input {
-    width: 75%;
-}
-
-table tr td:first-child:not(:last-child){
-    text-align: right;
-}
-
-table:last-child {
-    text-align: center;
-} 
-
-address
-{
-    font-family: isocpeur, cursive;
-    color: rgb(13, 74, 121);
-    text-shadow: 1px 0px #98989A, 0px 1px #98989A, -1px 0px #98989A, 0px -1px #98989A;
-}
-
-strong
-{
-    font-size: 1.3em;
 }

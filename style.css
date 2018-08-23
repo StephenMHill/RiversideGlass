@@ -125,7 +125,7 @@ html, body {
 
 .sidebar-nav {
     position: absolute;
-    left: -175px;
+    left: -167px;
     z-index: 40;
     opacity: 0;
     visibility: hidden;
