@@ -25,6 +25,7 @@
     margin-top: 1%;
     margin-left: 1%;
     width: 30%;
+    min-width: 482px;
 }
 
 section
@@ -39,12 +40,13 @@ section
 body
 {
     background-size: cover;
-    background: #d0d2dd;
+    background: #ffffff;
+    min-width: 780px;
 }
 
 h1
 {
-    color: royalblue;
+    color: rgb(13, 74, 121);
 }
 
 #banner
@@ -53,9 +55,15 @@ h1
     width: 100%;
 }
 
+h2
+{
+    padding-left: 2%;
+    font-weight: bold;
+}
 p
 {
     font-size: 1.3em;
+    padding-left: 3%;
 }
 
 /*

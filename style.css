@@ -211,6 +211,7 @@ html, body {
 }
 .hero-logo img {
     width: 100%;
+    min-width: 482px;
 }
 .hero-slider {
     height: 100%;
@@ -224,7 +225,7 @@ html, body {
     background-position: center center;
 }
 .hero-slider__slide2 {
-    background-image: url("images/backgrounds/strat3.PNG");
+    background-image: url("images/backgrounds/160714%20STRATFORD_INT_PIANO_01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
