@@ -39,7 +39,7 @@ $( document ).ready(function() {
         arrows: false,
         vertical: true,
         autoplay: true,
-        speed: 1000,
+        speed: 2500,
         pauseOnHover: false
       });
     
