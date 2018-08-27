@@ -219,18 +219,24 @@ html, body {
     position: relative;
 }
 .hero-slider__slide1 {
-    background-image: url("images/backgrounds/SRIF-day.jpg");
+    background-image: url("images/backgrounds/STRATFORD_INT_CAFE_01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .hero-slider__slide2 {
-    background-image: url("images/backgrounds/160714%20STRATFORD_INT_PIANO_01.jpg");
+    background-image: url("images/backgrounds/SRIF-day.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .hero-slider__slide3 {
+    background-image: url("images/backgrounds/160714%20STRATFORD_INT_PIANO_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero-slider__slide4 {
     background-image: url("images/backgrounds/Owen%20Sound.jpg");
     background-size: cover;
     background-repeat: no-repeat;
