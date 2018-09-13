@@ -24,6 +24,7 @@ html {
 
 /************** Body Style **************/
 
+<<<<<<< HEAD
 html, body {
     font-family: sans-serif;
     height: 100%;
@@ -178,6 +179,8 @@ html, body {
     background: rgba(255, 255, 255, 0.9);
 }
 
+=======
+>>>>>>> parent of 7248542... Lots-O-Chanages
 
 /* Colors: */
 
