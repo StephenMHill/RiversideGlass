@@ -45,8 +45,6 @@ $( document ).ready(function() {
     
       $('.slick-dots button').empty();
 
-      $('.projects').on('click', '.projects-container', function(evnet){
-          event.preventDefault();
-          $(this).next().not(':animated').slideToggle();
-      });
+      // $('.projects').on('click', '.projects-container', function(evnet){ event.preventDefault(); $(this).next().not(':animated').slideToggle(); });
+
 });
