@@ -17,7 +17,8 @@
 $( document ).ready(function() {
 
     // Nav Menu
-    var menuTrigger = $('.sidebar-trigger'); 
+    var menuTrigger = $('.sidebar-trigger');
+    var menuTriggerPosition = $('.sidebar-trigger').position();
     var nav = $('.sidebar-nav');
 
     if (!nav.hasClass('is--active')) {
@@ -32,15 +33,7 @@ $( document ).ready(function() {
         });
     }
     nav.css({'top' : menuTriggerPosition.top});
-    
-    
-    
-    
-    
-    
-    
-    
-    // Slick.js Jquery
+
     $('.hero-slider').slick({
         dots: true,
         arrows: false,
@@ -51,14 +44,8 @@ $( document ).ready(function() {
       });
     
       $('.slick-dots button').empty();
-    
-    
-    
-    
-    
-    
-    // Jquery accordian
-      $('.projects').on('click', '.projects-container', function(event){
+
+      $('.projects').on('click', '.projects-container', function(evnet){
           event.preventDefault();
           $(this).next().not(':animated').slideToggle();
       });
