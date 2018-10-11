@@ -140,5 +140,8 @@ p
     {
         display: none;
     }
+    @viewport {
+        width: 1800px;
+    }
 }
 
