@@ -157,7 +157,12 @@ article
     border-bottom-right-radius: 100px;
     */
 }
-
+a
+{
+    display: block;
+    margin-left: 9.5%;
+    padding-top: 10px;
+}
 p
 {
     text-align: left;
