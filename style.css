@@ -46,6 +46,16 @@ html, body {
 
 /************** Headers **************/
 
+#hidden_logo
+{
+    display: none;
+    margin-top: .5%;
+    margin-left: 1%;
+    width: 2%;
+    min-width: 112px;
+}
+
+
 .sidebar {
     position: fixed;
     z-index: 50;
@@ -332,3 +342,15 @@ html, body {
 }
 
 /************** Content **************/
+
+@media screen and (max-width: 580px)
+{
+     #hidden_logo
+    {
+        display: block;
+    }
+    #logo
+    {
+        display: none;
+    }
+}
