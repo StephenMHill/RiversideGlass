@@ -1,5 +1,8 @@
 /************** Projects **************/
-
+@font-face {
+  font-family: "isocpeur";
+  src: url("fonts/isocpeur.ttf") format("ttf");
+}
 
 .sidebar-trigger div span 
 {
@@ -73,7 +76,7 @@ article div:nth-child(2)
 
 p
 {
-    font-family: isocpeur, cursive; 
+    font-family: isocpeur; 
     font-size: 22px;
     margin: 12% 1% 12% 1%;
     color: rgb(211,211,213);
@@ -83,18 +86,25 @@ p
 
 /* @ media */
 
+@media screen and (max-width: 1800px)
+{
+    p
+    {
+        font-size: 1.1em;
+    }
+}
 @media screen and (max-width: 1500px)
 {
     p
     {
-        font-size: 1.3em
+        font-size: 1.05em;
     }
 }
 @media screen and (max-width: 1200px)
 {
     p
     {
-        font-size: 1.05em
+        font-size: .95em;
     }
 }
 @media screen and (max-width: 900px)
@@ -110,7 +120,7 @@ p
 
     p
     {
-        font-size: 1.35em
+        font-size: .85em;
     }
 }
 

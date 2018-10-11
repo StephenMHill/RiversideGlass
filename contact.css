@@ -32,6 +32,10 @@ html - 'Pacifico', 'Indie Flower',  42px, 19px
     License: none (public domain)
 
 -------------------------------------------------*/
+@font-face {
+  font-family: "isocpeur";
+  src: url("fonts/isocpeur.ttf") format("ttf");
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -117,9 +121,9 @@ h1
 {
     font-weight: 500;
     width: 30%;
-    margin: % 35% 2% 35%;
-    font-family: isocpeur, cursive;
-    font-size: 42px;
+    margin: 2% 35% 2% 35%;
+    font-family: isocpeur;
+    font-size: 8rem;
     color: rgb(13,74,121);
 }
 
@@ -128,16 +132,12 @@ h2
     margin-top: 6%;
     text-align: center;
     font-weight: bold;
-}
-
-article > a:hover
-{
-    font-size: 23px;
-    color: rgb(111,111,113);
+    font-size: 2rem;
 }
 
 figure
 {
+    
     margin: 15% 25% 5% 25%;
 }
 
@@ -145,16 +145,20 @@ article
 {
     width: 33%;
     box-sizing: border-box;
-    font-family: isocpeur, cursive;
-    font-size: 42px;
+    font-family: isocpeur;
     color: rgb(13,74,121);
 }
 
+article a:hover p:hover
+{
+    color: rgb(111,111,113);
+    font-size: 1.85em;
+}
 p
 {
     text-align: center;
-    font-size: 22px;
     margin: 3% 15% 3% 15%;
+    font-size: 1.55em;
 }
 
 #logo
@@ -175,15 +179,45 @@ p
 
 7. @media-------------------------------------------------*/
 
-@media screen and (max-width: 780px)
+@media screen and (max-width: 1030px)
 {
-
-   section
+    section
     {
         flex-direction: column;
     }
     
     article {
-        width: 100%;
+        width: 36%;
+        margin-left: 31.9%;
+        margin-right: 31.9%;
     }
+    p
+{
+    margin: auto 0;
+    padding: .5% .1% .5% .1%;
+    box-sizing: content-box;
+}
+    a
+    {
+        box-sizing: content-box;
+    }
+    h2
+    {
+    margin-top: 15%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    }
+    #email
+    {
+        width: 80%;
+        margin-left: 9.9%;
+        margin-right: 9.9%;
+        
+    }
+    #email h2
+    {
+        margin-top: 6%;
+    }
+    
 }
