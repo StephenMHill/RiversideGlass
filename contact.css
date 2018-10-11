@@ -116,7 +116,14 @@ section {
     clear: both;
     flex-wrap: wrap;
 }
-
+#hidden_logo
+{
+    display: none;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    width: 2%;
+    min-width: 112px;
+}
 h1
 {
     font-weight: 500;
@@ -220,4 +227,15 @@ p
         margin-top: 6%;
     }
     
+}
+@media screen and (max-width: 580px)
+{
+     #hidden_logo
+    {
+        display: block;
+    }
+    #logo
+    {
+        display: none;
+    }
 }

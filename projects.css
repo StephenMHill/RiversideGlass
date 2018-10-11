@@ -14,7 +14,7 @@
     margin-top: 1%;
     margin-left: 1%;
     width: 30%;
-    min-width: 552px;
+    min-width: 482px;
 }
 
 body
@@ -73,7 +73,14 @@ article div:nth-child(2)
     margin: auto;
     box-sizing: border-box;
 }
-
+#hidden_logo
+{
+    display: none;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    width: 2%;
+    min-width: 112px;
+}
 p
 {
     font-family: isocpeur; 
@@ -121,6 +128,17 @@ p
     p
     {
         font-size: .85em;
+    }
+}
+@media screen and (max-width: 580px)
+{
+     #hidden_logo
+    {
+        display: block;
+    }
+    #logo
+    {
+        display: none;
     }
 }
 

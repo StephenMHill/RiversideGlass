@@ -122,7 +122,6 @@ h2
     text-align: left;
     font-weight: bold;
     font-size: 42px;
-    padding-bottom: .5%;
 }
 
 h3
@@ -145,7 +144,7 @@ article
     padding-bottom: 1%;
     width: 100%;
     font-family: isocpeur;
-    font-size: 42px;
+    font-size: 22px;
     color: rgb(13,74,121);
     box-sizing: border-box;
     /*
@@ -158,10 +157,6 @@ article
     border-bottom-right-radius: 100px;
     */
 }
-.sexy_line
-{
-    margin-top: 2.8%;
-}
 
 p
 {
@@ -170,7 +165,7 @@ p
     margin: .5% 10% 1.5% 10%;
     color: rgb(111,111,113);
 }
-li
+article li
 {
     text-align: left;
     font-size: 22px;
@@ -178,6 +173,14 @@ li
     color: rgb(111,111,113);
 }
 
+#hidden_logo
+{
+    display: none;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    width: 2%;
+    min-width: 112px;
+}
 
 #logo
 {
@@ -194,45 +197,110 @@ li
     margin-bottom: 3%;
     width: 100%;
 }
-.sexy_line{ 
+.big_sexy_line{ 
     display:block;
     border:none;
     color:white;
     height:1px;
     background:black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 775, from(#000), to(#fff));
+    margin-top: 2.8%;
+
 }
+
+.lil_sexy_line
+{
+    width: 500px;
+    display:block;
+    margin-left: 8.5%;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 225, from(#000), to(#fff));
+    margin-top: .8%;
+}
+
 
 /*
 
 7. @media-------------------------------------------------*/
 @media screen and (max-width: 1800px)
 {
-    li
+    article li
     {
-        font-size: .9em;
+        font-size: 20px;
     }
+    .big_sexy_line{ 
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 750, from(#000), to(#fff));
+        
 }
+.lil_sexy_line
+{
+    width: 450px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(#000), to(#fff));
+    margin-top: .7%;
+}
+}
+
 @media screen and (max-width: 1500px)
 {
-    li
+    article li
     {
-        font-size: .75em;
+        font-size: 19px;
     }
+    .big_sexy_line{ 
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 600, from(#000), to(#fff));
 }
+    .lil_sexy_line
+{
+    width: 400px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 175, from(#000), to(#fff));
+    margin-top: .6%;
+}
+}
+
 @media screen and (max-width: 1200px)
 {
-    li
+    article li
     {
-        font-size: .55em;
+        font-size: 18px;
     }
+    .big_sexy_line{ 
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 425, from(#000), to(#fff));
 }
+    .lil_sexy_line
+{
+    width: 350px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#000), to(#fff));
+    margin-top: .5%;
+}
+    #banner
+{
+    height: 320px;
+}
+}
+
 @media screen and (max-width: 900px)
 {
     li
     {
-        font-size: .4em;
+        font-size: 17px;
     }
+    .big_sexy_line
+    { 
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 325, from(#000), to(#fff));
+    }
+    .lil_sexy_line
+{
+    width: 300px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 125, from(#000), to(#fff));
+    margin-top: .4%;
+}
+    #banner
+{
+    height: 270px;
+}
 }
 
 @media screen and (max-width: 780px)
@@ -240,7 +308,7 @@ li
 
     li
     {
-        font-size: .25em;
+        font-size: 16px;
     }
     section
     {
@@ -250,4 +318,43 @@ li
     article {
         width: 100%;
     }
+    .big_sexy_line
+    { 
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 175, from(#000), to(#fff));
+
+}
+    .lil_sexy_line
+{
+    width: 250px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#000), to(#fff));
+    margin-top: .3%;
+    
+}
+      #banner
+{
+    height: 210px;
+}
+}
+
+@media screen and (max-width: 580px)
+{
+        #banner
+{
+    height: 160px;
+}
+     #hidden_logo
+    {
+        display: block;
+    }
+    #logo
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+        #banner
+{
+    height: 120px;
 }
