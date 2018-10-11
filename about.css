@@ -49,6 +49,8 @@ body
 {
     background-size: cover;
     background-color: rgb(255,250,250);
+    min-width: 780px;
+    word-wrap: normal;
 }
 
 h1
@@ -92,10 +94,10 @@ p
 
 @media screen and (max-width: 580px)
 {
-    
     p
 {
     font-size: .7em;
+    width: 60%;
 }
      #hidden_logo
     {
